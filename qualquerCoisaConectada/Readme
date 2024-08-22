@@ -1,0 +1,37 @@
+<?php session_start(); ?>: Esta linha inicia uma sessão PHP. As sessões permitem armazenar informações do lado do servidor que podem ser usadas em diferentes páginas durante a mesma visita do usuário ao site.
+
+<!DOCTYPE html>: Esta é uma declaração que indica ao navegador que o documento é um HTML5.
+
+<html lang="pt-br">: Aqui começa o elemento HTML raiz do documento. lang="pt-br"indica que o idioma do documento é Português do Brasil.
+
+<head>: Esta é uma seção do documento onde informações sobre o documento, como o título, são definidas.
+
+<meta charset="UTF-8">: Defina o conjunto de caracteres como UTF-8, que é uma codificação de caracteres universalmente aceita.
+
+<title>CRUD - Cadastrar</title>: Defina o título da página que será exibida na aba do navegador.
+
+<body>: Esta é a seção onde o conteúdo visível da página é colocado.
+
+<h1>Cadastrar Usuário</h1>: Exibe um título de primeiro nível que diz "Cadastrar Usuário".
+
+<?php if(isset($_SESSION['msg'])){ echo $_SESSION['msg']; unset($_SESSION['msg']); } ?>: Este bloco PHP verifica se existe uma variável de chamada de sessão msg. Se existir, imprima seu valor e em seguida a remova com unset.
+
+<form method="POST" action="processa.php">: Defina um formulário. Ele será enviado para processa.phpusar o método POST quando o usuário submeter o formulário.
+
+<label> Nome: </label>: Exibe uma etiqueta de texto para o campo de entrada de nome.
+
+<input type="text" name="nome" placeholder="Digite o nome completo"><br><br>: Cria um campo de entrada de texto onde o usuário pode digitar o nome completo. O nome do campo é "nome".
+
+<label> Email: </label>: Exibe uma etiqueta de texto para o campo de entrada de e-mail.
+
+<input type="email" name="email" placeholder="Digite o seu melhor e-mail"><br><br>: Cria um campo de entrada de texto para o e-mail. O tipo é especificado como "email", o que ajuda a validar se o valor inserido for um endereço de e-mail válido.
+
+<input type="submit" value="Cadastrar">: Cria um botão de envio que, quando clicado, enviará os dados do formulário para o arquivo processa.php.
+
+</form>: Fecha o formulário.
+
+</body>: Fecha a seção de conteúdo visível.
+
+</html>: Data do elemento HTML raiz.
+
+Este código parece ser uma página de cadastro simples em PHP, onde os usuários podem inserir um nome e um endereço de e-mail. Ao submeter o formulário, os dados serão enviados para o arquivo processa.php. Lá, provavelmente, o código irá processar os dados do formulário de alguma forma (como armazená-los em um banco de dados).

@@ -1,0 +1,15 @@
+<?php 
+    $primeira_nota = 5; 
+    $segunda_nota = 7; 
+    $terceira_nota = 5; 
+     
+    $media_final = ($primeira_nota+$segunda_nota+$terceira_nota)/3; 
+     
+    if ($media_final >= 7){ 
+        echo "Media: ".number_format($media_final,1) ." Aprovado!"; 
+    } elseif ($media_final == 6) { 
+        echo "Media: ".number_format($media_final,1) ." Recuperação!"; 
+    } else { 
+        echo "Media: ".number_format($media_final,1) ." Reprovado!"; 
+    } 
+?> 
